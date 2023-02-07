@@ -1,0 +1,130 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+     background-color: #7f7f7f;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+}
+
+#calc {
+     margin-top: 40px;
+     width: 400px;
+     padding: 0.5rem;
+     background-color: #191919;
+
+     display: flex;
+     flex-direction: column;
+
+
+     backdrop-filter: blur(25px) saturate(53%);
+     -webkit-backdrop-filter: blur(25px) saturate(53%);
+     background-color: rgba(17, 25, 40, 0.62);
+     border-radius: 12px;
+     border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+
+.text {
+     font-size: 15px;
+     margin-bottom: 20px;
+     font-weight: 500;
+     color: aliceblue;
+
+}
+
+#previous-operation {
+     text-align: right;
+     background-color: #7f7f7f;
+     margin-bottom: 20px;
+     font-weight: 700;
+     font-size: 20px;
+     opacity: 0.5;
+     padding: 2px;
+     border-radius: 3px;
+     word-wrap: break-word;
+     min-height: 2.5rem;
+
+}
+
+#current-operation {
+     text-align: right;
+     background-color: #7f7f7f;
+     margin-bottom: 10px;
+     font-size: 30px;
+     padding: 2px;
+     border-radius: 6px;
+     /*querbra linha automatico*/
+     word-wrap: break-word;
+     min-height: 3rem;
+
+}
+
+#container_buttons {
+     display: grid;
+     /* uma lina com 4 fracoes de colunas*/
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 4px;
+
+}
+
+.bt {
+     border-radius: 6px;
+     border: 1px solid transparent;
+     padding: 4px;
+     font-size: 25px;
+     font-weight: 800;
+     cursor: pointer;
+     height: 70px;
+}
+
+.bt1 {
+     border-radius: 6px;
+     border: 1px solid transparent;
+     padding: 4px;
+     font-size: 25px;
+     font-weight: 800;
+     cursor: pointer;
+     height: 70px;
+     transition: all 0.5s;
+}
+
+.bt1:hover {
+     background-color: #c6c5c4;
+     transition: all 0.5s;
+}
+
+#nun {
+     background-color: black;
+     color: aliceblue;
+     backdrop-filter: blur(25px) saturate(53%);
+     -webkit-backdrop-filter: blur(25px) saturate(53%);
+     background-color: rgba(56, 52, 58, 0.253);
+     border-radius: 12px;
+     border: 1px solid rgba(255, 255, 255, 0.125);
+     transition: all 0.5s;
+}
+
+#nun:hover {
+     background-color: #5f5e62;
+
+     transition: all 0.5s;
+}
+
+#igual {
+     /*ocupa dois espacos */
+     grid-column: span 2;
+     background-color: #cbc7a4;
+     transition: all 0.5s;
+}
+
+#igual:hover {
+     background-color: #cc9a05;
+     transition: all 0.5s;
+}
